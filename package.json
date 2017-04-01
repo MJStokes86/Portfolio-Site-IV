@@ -1,0 +1,22 @@
+{
+  "name": "mynewportfoliosite",
+  "version": "2.11.3",
+  "description": "My new portfolio site ",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "any",
+    "keyword"
+  ],
+  "author": "Michael J. Stokes",
+  "license": "ISC"
+}
