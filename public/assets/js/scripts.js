@@ -160,7 +160,7 @@ Version      : 1.0
         $(".work-list").owlCarousel({
             items: 3,
             autoPlay: true,
-            navigation: false,
+            navigation: true,
             itemsDesktop: [1199, 1],
             itemsDesktopSmall: [980, 1],
             itemsTablet: [768, 1],
@@ -168,7 +168,10 @@ Version      : 1.0
             itemsMobile: [479, 1],
             pagination: true,
             autoHeight: true,
+            
+            
         });
+
 
 
 

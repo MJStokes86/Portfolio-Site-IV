@@ -684,38 +684,6 @@ ul.navbar-nav {
     
 }
 
-.social-footer {
-    position: relative;
-    
-}
-
-
-.social-footer li {
-    display: inline-block;
-    padding: 0;
-
-}
-
-.social-footer a i{
-    color: #fff;
-    font-size: 30px;
-}
-
-.social-footer a:hover{
-    text-decoration: none;
-
-
-}
-
-.social-footer i:hover {
-    color: #E68CC0;
-    -webkit-transition: color 0.5s linear; 
-    -moz-transition: color 0.5s linear;
-    -ms-transition: color 0.5s linear;
-    -o-transition: color 0.5s linear;
-     transition: color 0.5s linear;
-}
-
 
 /*................ end of nav overlay................................./*
 /*................ end of navigation................................./*
@@ -1083,7 +1051,7 @@ a.read-more:hover, a#resume-button:hover {
 
 .available-work-area {
     position: relative;
-    background: url(../images/bg/bg.jpg);
+    background: url(../images/bg/GrandCentral.jpg);
     background-size: cover;
     z-index: 1;
     padding: 150px 0px;
@@ -1234,4 +1202,43 @@ a.read-more:hover, a#resume-button:hover {
     margin-bottom: 0;
     font-size: 14px;
     color: #fff;
+}
+
+.social-footer {
+    position: relative;
+    
+}
+
+
+.social-footer li {
+    display: inline-block;
+    padding: 0;
+
+}
+
+.social-footer a i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.social-footer a:hover{
+    text-decoration: none;
+
+
+}
+
+.social-footer i:hover {
+    color: pink;
+    -webkit-transition: color 0.5s linear; 
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+     transition: color 0.5s linear;
+}
+
+.footer-logo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 46%;
 }
