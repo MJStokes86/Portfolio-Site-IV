@@ -157,7 +157,7 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-        $(".blog-list").owlCarousel({
+        $(".work-list").owlCarousel({
             items: 3,
             autoPlay: true,
             navigation: false,

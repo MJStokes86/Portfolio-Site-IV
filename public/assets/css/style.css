@@ -752,15 +752,30 @@ ul.navbar-nav {
 */
 
 .service-area {
-    background: #fafafa;
+    position: relative;
+    background: url(../images/bg/bethesdactrlpk.jpg);
+    background-size: cover;
+    z-index: 1;
+    padding: 150px 0px;
+    background-attachment: fixed;
 }
 
+.service-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
 .single-service {}
 
 .single-service i {
     font-size: 40px;
     margin-bottom: 10px;
-    color: #232323;
+    color: #fff;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -771,13 +786,13 @@ ul.navbar-nav {
     margin: 20px 0px;
     -webkit-transition: .3s;
     transition: .3s;
-    color: #232323;
+    color: #fff;
     letter-spacing: 2px;
     font-weight: 500;
 }
 
 .single-service p {
-    color: #232323;
+    color: #fff;
 }
 
 
@@ -1006,20 +1021,20 @@ ul.work li.active {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 09.BLOG CSS STYLE
+* 09.work CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
-.blog-area {
+.work-area {
     background: #f7f7f7;
 }
 
-.single-blog {
+.single-work {
     text-align: center;
     padding: 10px;
 }
 
-.single-blog a.blog-title {
+.single-work a.work-title {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1031,15 +1046,15 @@ ul.work li.active {
     margin-bottom: 5px;
 }
 
-.single-blog a.blog-title:hover {
+.single-work a.work-title:hover {
     color: #000;
 }
 
-.single-blog p {
+.single-work p {
     text-align: center;
 }
 
-a.read-more {
+a.read-more, a#resume-button {
     display: inline-block;
     background: #000;
     color: #fff;
@@ -1048,10 +1063,10 @@ a.read-more {
     border: 1px solid #000;
     text-transform: capitalize;
     font-size: 14px;
-    border-radius: 30px;
+    border-radius: 0;
 }
 
-a.read-more:hover {
+a.read-more:hover, a#resume-button:hover {
     background: transparent;
     border: 1px solid #000;
     -webkit-transition: .3s;
