@@ -172,6 +172,9 @@ fieldset {
     z-index: 1;
 }
 
+
+
+
 .welcome-image-area:after {
     position: absolute;
     background: rgba(0, 0, 0, .6);
@@ -194,12 +197,15 @@ fieldset {
     vertical-align: middle;
 }
 
+
+
 .header-text h2 {
     color: #fafafa;
     font-size: 75px;
     font-weight: 900;
     text-transform: capitalize;
     color: pink;
+    margin-top: 10%;
 }
 
 .header-text p {
@@ -315,25 +321,35 @@ fieldset {
     transition: all 0.4s ease-out;
 }
 
+
 .logo {
     padding-top: 28px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+
 }
 
 .logo img {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
+   
+
+    
 }
 
-/* .logo a {
+.logo a {
     color: #fff;
-    text-transform: capitalize;
-    background: #000;
-    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: Anton;
+    font-size: 1.5em;
 }
- */
-/* .nav-toggle {
+
+
+#nav-logo {
+  margin-top: -5%;
+}
+
+.nav-toggle {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -342,7 +358,7 @@ fieldset {
 }
 
 .toggle-btn {
-    background-color: #000;
+    background-color: transparent;
     border: 0 none;
     padding: 10px;
     outline: none;
@@ -350,7 +366,7 @@ fieldset {
 
 .toggle-btn .icon-bar {
     background-color: #fafafa;
-    display: block;
+    display: block !important;
     height: 2px;
     margin-bottom: 5px;
     width: 22px;
@@ -385,6 +401,7 @@ fieldset {
     margin-right: 43px;
 }
 
+
 .site-header .navbar-collapse {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -412,12 +429,13 @@ fieldset {
     -webkit-transition: .3s;
     transition: .3s;
     font-weight: 300;
+
 }
 
 ul.navbar-nav {
-    background: #000;
+    background: none;
     margin-right: 5px;
-    margin-top: 6px;
+    margin-top: 3%;
 }
 
 .mainmenu .navbar-nav li a:hover {
@@ -438,255 +456,7 @@ ul.navbar-nav {
 .navbar {
     margin: 0;
 }
- */
 
-
-
-
-/*............................. navigation ......................... */
- 
-
-#bars {
-    color: #fff;
-    position:  fixed;
-    top: 5%;
-}
-
-.navbar-fixed-top {
-    display: none;
-}
-
-
-#menu-main-navigation {
-    display: inline;
-
-}
-
-
-.navbar-header {
-    padding: 10px !important;
-}
-
-.navbar-color {
-    background-color: #212121 !important;
-    border: none !important;
-    background: rgb(0, 0, 0) !important;
-   background: rgba(0, 0, 0, 0.9) !important;
-}
-
-#my-name {
-    font-family: 'Anton', sans-serif;    
-    font-size: 30px;
-    color: pink;
-    margin-top: 15%;
-
-
-    }
-
-
-.navbar-brand img {
-    width: 100px;
-    height: 100px;
-    margin-top: -5%;
-/*     display: none;
- */    
-}
-
-#toggle {
-    margin-top: 2%;
-    
-}
-
-
-
-
-#menu-main-navigation li a{
-    color: #fff !important;
-    position: relative;
-    
-}
-
-#menu-main-navigation li a:hover {
-    color:  pink !important;
-    -webkit-transition: color 0.5s linear; 
-    -moz-transition: color 0.5s linear;
-    -ms-transition: color 0.5s linear;
-    -o-transition: color 0.5s linear;
-     transition: color 0.5s linear;
-}
-
-
-
-/*......................... nav overlay.............................. */
-
-.button_container {
-    position: fixed;
-    top: 5%;
-    right: 2%;
-    height: 27px;
-    width: 35px;
-    cursor: pointer;
-    z-index: 100;
-    transition: opacity .25s ease;
-
-
-
-    
-}
-
-
-
-
-
-.button_container:hover {
-    opacity: .7;
-
-    }
-
-
-
-
-
-.button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-
-    
-}
-
-.button_container.active .middle {
-    opacity: 0;
-    background: #fff;
-
-}
-
-.button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    
-}
-
-.button_container span {
-    background: pink;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer;
-    
-    
-}
-
-.button_container span:nth-of-type(2) {
-    top: 11px;
-}
-
-.button_container span:nth-of-type(3) {
-    top: 22px;
-}
-
-.overlay {
-    position: fixed;
-    background: #000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    z-index: 99;
-}
-
-.overlay.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-}
-
-.overlay.open li {
-    animation: fadeInRight .5s ease forwards;
-    animation-delay: .35s;
-}
-
-.overlay.open li:nth-of-type(2) {
-    animation-delay: .4s;
-}
-
-.overlay.open li:nth-of-type(3) {
-    animation-delay: .45s;
-}
-
-.overlay.open li:nth-of-type(4) {
-    animation-delay: .50s;
-}
-
-.overlay nav {
-    position: relative;
-    height: 70%;
-    top: 70%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-}
-
-.overlay ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-
-}
-
-.overlay ul li a {
-    display: block;
-    position: relative;
-    color: pink;
-    text-decoration: none;
-    overflow: hidden;
-    padding: 20px;
-
-}
-
-/* .overlay ul li a:hover::after, .overlay ul li a:focus::after, .overlay ul li a:active::after {
-    width: 25%;
-} */
-
-
-.overlay ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0%;
-    transform: translateX(-50%);
-    height: 3px;
-    background: #fff;
-    transition: .35s;
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        left: 20%;
-    }
-    100% {
-        opacity: 1;
-        left: 0;
-    }
-    
-}
-
-
-/*................ end of nav overlay................................./*
-/*................ end of navigation................................./*
 
 
 
@@ -956,35 +726,10 @@ ul.work li.active {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 08.COMPLETE PROJECT CSS STYLE
+* 08.PORTFOLIO PAGE CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
-.single-project-complete{
-    text-align: center;
-    
-}
-
-.single-project-complete i {
-    font-size: 30px;
-    color: #232323;
-    
-}
-
-.single-project-complete h2 {
-    font-size: 60px;
-    font-weight: 900;
-    color: #232323;
-}
-
-.single-project-complete h3 {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #232323;
-    letter-spacing: 2px;
-    font-weight: 500;
-    margin-top: 0;
-}
 
 
 /*
@@ -1002,7 +747,7 @@ ul.work li.active {
     padding: 10px;
 }
 
-.single-work a.work-title {
+.single-work p.work-title {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1014,7 +759,7 @@ ul.work li.active {
     margin-bottom: 5px;
 }
 
-.single-work a.work-title:hover {
+.single-work p.work-title:hover {
     color: #000;
 }
 
@@ -1022,7 +767,7 @@ ul.work li.active {
     text-align: center;
 }
 
-a.read-more, a#resume-button {
+a.project-link, a#resume-button {
     display: inline-block;
     background: #000;
     color: #fff;
@@ -1034,13 +779,58 @@ a.read-more, a#resume-button {
     border-radius: 0;
 }
 
-a.read-more:hover, a#resume-button:hover {
+a.project-link:hover, a#resume-button:hover {
     background: transparent;
     border: 1px solid #000;
     -webkit-transition: .3s;
     transition: .3s;
     color: #000;
 }
+
+#project-two hr {
+    margin-top: 15%;
+}
+#project-three hr {
+    margin-top: 23%;
+}
+#project-four hr {
+    margin-top: 31%;
+}
+#project-five hr {
+    margin-top: 23%;
+}
+#project-six hr {
+    margin-top: 31%;
+}
+
+#project-seven hr {
+    margin-top: 23%;
+}
+
+#project-eight hr {
+    margin-top: 40%;
+}
+
+.owl-next, .owl-prev {
+    display: inline-block;
+    background: #000 !important;
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 0 !important;
+}
+
+.owl-next:hover, .owl-prev:hover {
+    background: transparent;
+    border: 1px solid #000;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #000;
+}
+
 
 
 /*
@@ -1158,7 +948,7 @@ a.read-more:hover, a#resume-button:hover {
     transition: .3s;
     background: #000;
     text-transform: capitalize;
-    border-radius: 30px;
+    border-radius: 0;
 }
 
 .contact-form input[type='submit']:hover {

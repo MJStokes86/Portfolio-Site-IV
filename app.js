@@ -9,6 +9,11 @@ app.get('/', function(req,res){
 
 });
 
+app.get('/portfolio', function(req,res){
+    res.send(fs.readFileSync('./views/portfolio.html', 'utf8'));
+
+});
+
 app.listen(process.env.PORT || 3000, function() {
     console.log("LISTENING!")
 
