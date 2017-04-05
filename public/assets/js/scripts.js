@@ -57,40 +57,41 @@ Version      : 1.0
 
 
 
-   $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
-                $('.navbar-fixed-top').fadeIn(500);
-            } else {
-                $('.navbar-fixed-top').fadeOut(500);
-            }
-        });
+   // $(window).scroll(function(){
+   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
+   //          $('.logo').fadeOut(500).css('display', 'none');
+   //      } else {
+   //           $('.logo').fadeIn(500).css('display', 'block');
 
-   $(window).scroll(function(){
-        if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-            $('.logo a').css('color', 'pink');
-        } else {
-             $('.logo a').css('color', '#fff');
+   //      }
+   //  }); 
 
-        }
-    }); 
+   // $(window).scroll(function(){
+   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
+   //          $('.icon-bar').css('background-color', 'pink');
+   //      } else {
+   //           $('.icon-bar').css('background-color', '#fafafa');
 
-   $(window).scroll(function(){
-        if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-            $('.icon-bar').css('background-color', 'pink');
-        } else {
-             $('.icon-bar').css('background-color', '#fafafa');
+   //      }
+   //  });
 
-        }
-    });
+   // $(window).scroll(function(){
+   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
+   //          $('.mainmenu .navbar-nav li a').css('background-color', '#000');
+   //      } else {
+   //           $('.mainmenu .navbar-nav li a').css('background-color', 'transparent');
 
-   $(window).scroll(function(){
-        if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-            $('.mainmenu .navbar-nav li a').css('background-color', 'pink');
-        } else {
-             $('.mainmenu .navbar-nav li a').css('background-color', '#fafafa');
+   //      }
+   //  }); 
 
-        }
-    });
+   // $(window).scroll(function(){
+   //      if ($(this).scrollTop() > 200) {
+   //          $('.toggle-btn').fadeIn(500).css('background-color', '#000');
+   //      } else {
+   //           $('.toggle-btn').css('background-color', 'transparent');
+
+   //      }
+   //  });
 
         /*
          * ----------------------------------------------------------------------------------------
@@ -184,7 +185,7 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-        $(".work-list").owlCarousel({
+        $(".project-list").owlCarousel({
             items: 3,
             autoPlay: true,
             itemsDesktop: [1199, 1],
@@ -199,6 +200,14 @@ Version      : 1.0
 
             
         });
+
+        $('.header-text').typed({
+                strings:[" <h2>Hello. <br> I'm Michael J. Stokes. <br> I'm your developer. <br> Let's build something together!</h2>"], 
+                typeSpeed:100,
+                loop:false,
+                cursorChar: "|",
+                showCursor: true
+            });
 
 
 
@@ -235,5 +244,8 @@ Version      : 1.0
 
 
     });
+
+
+        
 
 })(jQuery);

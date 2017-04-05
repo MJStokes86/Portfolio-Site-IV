@@ -27,7 +27,7 @@ $(document).ready(function() {
 
      $("#loader").show();
         $.ajax({
-            url: "assets/php/contact.php",
+            url: "http://localhost:3000/contact.php",
             type: "POST",
             data:  new FormData(this),
             contentType: false,

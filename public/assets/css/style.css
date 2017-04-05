@@ -208,6 +208,7 @@ fieldset {
     margin-top: 10%;
 }
 
+
 .header-text p {
     color: #fafafa;
     position: relative;
@@ -312,7 +313,7 @@ fieldset {
 }
 
 .header-top-area {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -332,10 +333,7 @@ fieldset {
 .logo img {
     height: 75px;
     width: 75px;
-   
-
-    
-}
+   }
 
 .logo a {
     color: #fff;
@@ -344,29 +342,24 @@ fieldset {
     font-size: 1.5em;
 }
 
-
-#nav-logo {
-  margin-top: -5%;
-}
-
 .nav-toggle {
-    position: absolute;
+    position: fixed;
     right: 15px;
-    top: 50%;
+    top: 9%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .toggle-btn {
-    background-color: transparent;
-    border: 0 none;
+    background-color: #000;
+    border: 1px #fff solid;
     padding: 10px;
     outline: none;
 }
 
 .toggle-btn .icon-bar {
     background-color: #fafafa;
-    display: block !important;
+    display: block;
     height: 2px;
     margin-bottom: 5px;
     width: 22px;
@@ -417,7 +410,10 @@ fieldset {
 }
 
 .mainmenu {
-    margin-top: 18px;
+    margin-top: 10%;
+    margin-left: 61%;
+    position: fixed;
+
 }
 
 .mainmenu .navbar-nav li a {
@@ -429,13 +425,14 @@ fieldset {
     -webkit-transition: .3s;
     transition: .3s;
     font-weight: 300;
+   
 
 }
 
 ul.navbar-nav {
-    background: none;
+    background: #000;
     margin-right: 5px;
-    margin-top: 3%;
+    margin-top: 15px;
 }
 
 .mainmenu .navbar-nav li a:hover {
@@ -467,6 +464,12 @@ ul.navbar-nav {
 * ----------------------------------------------------------------------------------------
 */
 
+.about-me-area {
+    background-color: #f7f7f7;
+    color: #212121;
+
+}
+
 .about-image {}
 
 .about-text h2 {
@@ -489,7 +492,7 @@ ul.navbar-nav {
 * ----------------------------------------------------------------------------------------
 */
 
-.service-area {
+.history-area {
     position: relative;
     background: url(../images/bg/bethesdactrlpk.jpg);
     background-size: cover;
@@ -498,7 +501,7 @@ ul.navbar-nav {
     background-attachment: fixed;
 }
 
-.service-area:after {
+.history-area:after {
     position: absolute;
     background: rgba(0, 0, 0, .8);
     left: 0;
@@ -508,29 +511,30 @@ ul.navbar-nav {
     content: "";
     z-index: -1;
 }
-.single-service {}
-
-.single-service i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #fff;
-    -webkit-transition: .3s;
-    transition: .3s;
+.single-item-complete{
+    text-align: center;
+    
 }
 
-.single-service h2 {
+.single-item-complete i {
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.single-item-complete h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: pink;
+}
+
+.single-item-complete h3 {
     font-size: 12px;
     text-transform: uppercase;
-    margin: 20px 0px;
-    -webkit-transition: .3s;
-    transition: .3s;
     color: #fff;
     letter-spacing: 2px;
     font-weight: 500;
-}
-
-.single-service p {
-    color: #fff;
+    margin-top: 0;
 }
 
 
@@ -540,78 +544,25 @@ ul.navbar-nav {
 * ----------------------------------------------------------------------------------------
 */
 
-#skills {
-    background-color: #141414 !important;
-    color: #fff;
-    background-image: none !important;
-}
-
-#skills p {
-    font-size: 15px;
-}
-
-#skills h3 {
-    font-family: Anton, sans-serif;
-    color: pink;
-    text-transform: uppercase;
-}
-
-#skills h4 {
-    text-transform: uppercase;
-}
-
-.skill-bar span{
-    display: table;
-    height: 5px;
-    background-color: pink;
+.skillset {
+    background-color: #212121;
+    color: #fafafa;
 
 }
 
-.skills .col-xs-12 {
-    margin-left: -7%;
-}
-
- .devicons {
-    font-size: 3em;
-}
-
-.glyphicon {
-    font-size: 3em;
-}
-.fa {
-    font-size: 3em;
-}
-
-.skills li {
-    list-style: none;
-}
-
-.languages {
-    position: relative;
-    left: 15% !important;
-}
-
-.technologies {
-     position: relative;
-    left: 20% !important;
-}
-
-.layout {
-    position: relative;
-    left: 35% !important;
-}
-
-.other-tech {
-    position: relative;
-    left: 20% !important;
+.skillset hr {
+    width: 50%;
 }
 
 
-
-#resume_button {
-    margin-top: 10% !important;
-    margin-left: 15% !important;
+.tech-skills li {
+    display: inline;
 }
+
+.devicons {
+    font-size: 4em;
+}
+
 
 
 /*
@@ -733,8 +684,44 @@ ul.work li.active {
 
 
 /*
+
+
+/*
 * ----------------------------------------------------------------------------------------
-* 09.work CSS STYLE
+* 08.COMPLETE PROJECT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+./* single-project-complete{
+    text-align: center;
+    
+}
+
+.single-project-complete i {
+    font-size: 30px;
+    color: pink;
+    
+}
+
+.single-project-complete h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: pink;
+}
+
+.single-project-complete h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: pink;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 0;
+} */
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09. PROJECT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
@@ -742,12 +729,12 @@ ul.work li.active {
     background: #f7f7f7;
 }
 
-.single-work {
+.single-project {
     text-align: center;
     padding: 10px;
 }
 
-.single-work p.work-title {
+.single-project p.project-title {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -759,15 +746,15 @@ ul.work li.active {
     margin-bottom: 5px;
 }
 
-.single-work p.work-title:hover {
+.single-project p.project-title:hover {
     color: #000;
 }
 
-.single-work p {
+.single-project p {
     text-align: center;
 }
 
-a.project-link, a#resume-button {
+a.project-link {
     display: inline-block;
     background: #000;
     color: #fff;
@@ -779,9 +766,29 @@ a.project-link, a#resume-button {
     border-radius: 0;
 }
 
+a#resume-button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 0;
+}
+
 a.project-link:hover, a#resume-button:hover {
     background: transparent;
     border: 1px solid #000;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #000;
+}
+
+a#resume-button:hover {
+    background: #fff;
+    border: 1px solid #fff;
     -webkit-transition: .3s;
     transition: .3s;
     color: #000;
@@ -859,16 +866,16 @@ a.project-link:hover, a#resume-button:hover {
     z-index: -1;
 }
 
-.available-text {
-    background: #fff;
-    border-radius: 100%;
-    width: 260px;
-    height: 260px;
-    margin: 0 auto;
-    position: relative;
+.available-text h3 {
+    color: #fafafa;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: pink;
+    margin-top: 10%;
 }
 
-.available-text:before {
+/* .available-text:before {
     position: absolute;
     left: 0;
     top: 0;
@@ -898,7 +905,7 @@ a.project-link:hover, a#resume-button:hover {
     font-weight: 300;
     font-size: 16px;
 }
-
+ */
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -906,7 +913,10 @@ a.project-link:hover, a#resume-button:hover {
 * ----------------------------------------------------------------------------------------
 */
 
-.contact-me-area {}
+.contact-me-area {
+    background-color: #212121;
+    color: #fafafa;
+}
 
 .contact-form {
     border-radius: 3px;
@@ -937,7 +947,7 @@ a.project-link:hover, a#resume-button:hover {
 
 .contact-form input[type='submit'] {
     display: inline-block;
-    color: #fff;
+    color: #000;
     background: none;
     padding: 15px 25px;
     border: 1px solid #333;
@@ -946,15 +956,15 @@ a.project-link:hover, a#resume-button:hover {
     font-weight: 300;
     -webkit-transition: .3s;
     transition: .3s;
-    background: #000;
+    background: #fff;
     text-transform: capitalize;
     border-radius: 0;
 }
 
 .contact-form input[type='submit']:hover {
-    background: transparent;
+    background: #000;
     border: 1px solid #000;
-    color: #000;
+    color: #fff;
     -webkit-transition: all 0.4s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -970,8 +980,8 @@ a.project-link:hover, a#resume-button:hover {
 }
 
 .success {
-    background: #50B948 none repeat scroll 0 0;
-    color: #fff;
+    background: #fff none repeat scroll 0 0;
+    color: #000;
     font-weight: 700;
     padding: 20px;
     text-align: center;
@@ -1018,7 +1028,7 @@ a.project-link:hover, a#resume-button:hover {
 }
 
 .social-footer i:hover {
-    color: pink;
+    color: gray;
     -webkit-transition: color 0.5s linear; 
     -moz-transition: color 0.5s linear;
     -ms-transition: color 0.5s linear;
