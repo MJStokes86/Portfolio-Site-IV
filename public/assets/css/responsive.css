@@ -1,11 +1,59 @@
+
+
 @media only screen and (max-width: 48em) {
 
+   .logo {
+        position: relative;
+        top: -35px !important;
+   }
+
+    .logo img {
+        height: 60px !important;
+        width: 60px !important;
+   }
+
+    .logo a {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Anton;
+        font-size: 1.5em;
+    }
+
+    .logo span {
+        position: relative;
+        left: 65%;
+        top: -40px;
+    }
+
+
+    .icon-bar {
+        background-color: #fff !important;
+    }
+
+    .navbar-nav  {
+        border: none !important;
+    }
+
+
     .navbar-toggle {
-        margin-top: -18% !important;
-        left: 92% !important;
-        position: fixed;
+        position: absolute;
+        top: 19% !important;
+        margin-left: 10% !important;
         border-radius: 0;
-        border: #fff solid 1px;
+        border: none;
+        background-color: transparent !important;
+    }
+
+    .navbar-collapse {
+        overflow: hidden;
+        height: 300px;
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .navbar-nav li {
+        left: 25% !important;
+        top: 20px !important;
     }
 
     .footer-logo {
@@ -15,6 +63,11 @@
     .welcome-image-area {
          background: url(../images/bg/ctrlpk.jpg) center;
     }
+
+    .header-text {
+        font-size: 5em !important;
+    }
+
     .history-area {
         background: url(../images/bg/bethesdactrlpk.jpg) center;
     }
@@ -33,18 +86,45 @@
 }
 
 
-/* Medium Layout: 1280px. */
-
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
-
-
-
-}
-
 
 /* Tablet Layout: 768px. */
 
-@media only screen and (min-width: 767px) and (max-width: 991px) {
+@media only screen and (min-width: 767px) and (max-width: 1280px) {
+    
+
+     .logo {
+        position: relative;
+        top: -35px !important;
+   }
+
+    .logo img {
+        height: 75px !important;
+        width: 75px !important;
+   }
+
+    .logo a {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Anton;
+        font-size: 1.5em;
+    }
+
+    .logo span {
+        position: relative;
+        left: 65%;
+        top: -50px;
+        font-size: 0.9em !important;
+    }
+
+
+    .navbar-nav li {
+        left: -25% !important;
+        top: -33px !important;
+    }
+   
+
+   
+
     .single-project-done {
         text-align: center;
     }
@@ -67,6 +147,10 @@
     #map {
         margin-top: 20px;
     }
+
+    .footer-logo {
+        left: 45%;
+    }
 }
 
 
@@ -83,27 +167,76 @@
         visibility: visible;
     }
 
+    #brand {
+        margin-top: -40%;
+        left: 2%;
+    }
+
+    #name {
+        font-size: 1.5em !important;
+    }
+
+    #subtitle {
+        font-size: 0.7em;
+        width: 100%;
+        top: -20px;
+       
+    }
+
+/* 
     .logo img {
-        height: 50px;
-        width: 50px;
-   }
+        height: 28% !important;
+        width: 28% !important;
+   } */
 
    .logo a {
         font-size: 0.9em;
    }
+
+   .logo p {
+        left: 20%;
+        top: -40px;
+
+   }
+
+     .header-text h2  {
+        font-size:  0.5em !important;
+    }
+
+
+
     .navbar-toggle .icon-bar {
         background: #fff;
 
     }
-    .navbar-toggle {
-        margin-top: -75px !important;
-        background: #000;
-        left: 75% !important;
-        position: fixed !important;
+    
+     .navbar-toggle {
+        position: relative;
+        top: 33px !important;
+        margin-left: 70% !important;
+        border-radius: 0;
+        border: none;
+        background-color: transparent !important;
     }
+
     .navbar {
         min-height: 0px;
     }
+
+    .navbar-collapse {
+        overflow: hidden;
+        height: 300px;
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+
+
+    .navbar-nav li {
+        left: 25% !important;
+        top: 30px !important;
+    }
+                    
 
      .mainmenu {
         margin-left: 50% !important;
@@ -141,12 +274,25 @@
     .single-project-complete h2 {
 	font-size: 40px;
 }
+
+    .service-area {
+        text-align: center;
+
+    }
+
+
     .about-text h2 {
         font-size: 22px;
     }
 
     .available-text h3 {
         font-size: 2em;
+    }
+
+    .available-work-area {
+        background: none;
+        background-color: #212121 !important;
+        height: 400px !important;
     }
     .single-testimonial p {
         padding: 0 10px;
@@ -161,7 +307,7 @@
     }
 
     .footer-logo {
-        margin-left: -11%;
+        left: 35% !important;
     }
     .header-text p {
         font-size: 16px;
@@ -191,9 +337,12 @@
     #map {
         margin-top: 20px;
     }
-    .item .grid figure, .work .grid figure {
+    /* .item .grid figure, .work .grid figure {
         min-width: 100%;
+
     }
+ */
+
 }
 
 
@@ -202,11 +351,32 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
      .navbar-toggle {
-        margin-top: -100px !important;
-        background: #000;
-        left: 75% !important;
-        position: fixed !important;
+        position: relative;
+        top: 10px !important;
+        margin-left: 30% !important;
+        border-radius: 0;
+        border: none;
+        background-color: transparent !important;
     }
+
+
+
+    .navbar-nav li {
+        left: -40% !important;
+        top: 20px !important;
+        display: inline-block !important;
+    }
+
+    .navbar-nav li a {
+        padding: 5px !important;
+
+    }
+
+    .navbar-collapse {
+       height: auto !important;
+    }
+
+
 
     .header-text {
         margin-top: -15% !important;
@@ -222,8 +392,78 @@
         margin-left: 30% !important;
     }
 
-    .footer-logo {
-        margin-left: -1%;
+
+    #brand {
+        margin-top: -15%;
+        left: -3%;
     }
+
+    #name {
+        font-size: 1.5em !important;
+    }
+
+    #subtitle {
+        font-size: 0.7em;
+        left: 23%;
+       
+    }
+
+
+  /*   .logo img {
+        height: 15% !important;
+        width: 15% !important;
+   } */
+
+     .logo p {
+        left: 10%;
+        top: -40px;
+
+   }
+
+    .footer-logo {
+        left: 42% !important;
+    }
+
+}
+
+
+/* Medium Layout: 1280px. */
+
+
+
+@media only screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5) 
+  and (orientation: portrait)  {
+
+
+     
+    
+   .footer-logo {
+    left: 43% !important;
+   }
+  
+
+
+}
+
+
+
+@media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) 
+  and (orientation: landscape)  {
+
+
+
+    .logo p {
+        left: 40%;
+    }
+
+
+    .footer-logo {
+        left: 45%;
+    }
+  
+
+
+}
+
 
 

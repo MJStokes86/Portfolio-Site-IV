@@ -51,41 +51,6 @@
 
 
 
-   // $(window).scroll(function(){
-   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-   //          $('.logo').fadeOut(500).css('display', 'none');
-   //      } else {
-   //           $('.logo').fadeIn(500).css('display', 'block');
-
-   //      }
-   //  }); 
-
-   // $(window).scroll(function(){
-   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-   //          $('.icon-bar').css('background-color', 'pink');
-   //      } else {
-   //           $('.icon-bar').css('background-color', '#fafafa');
-
-   //      }
-   //  });
-
-   // $(window).scroll(function(){
-   //      if ($(this).scrollTop() > 200 && $('.body').css('background-color', '#fff')) {
-   //          $('.mainmenu .navbar-nav li a').css('background-color', '#000');
-   //      } else {
-   //           $('.mainmenu .navbar-nav li a').css('background-color', 'transparent');
-
-   //      }
-   //  }); 
-
-   // $(window).scroll(function(){
-   //      if ($(this).scrollTop() > 200) {
-   //          $('.toggle-btn').fadeIn(500).css('background-color', '#000');
-   //      } else {
-   //           $('.toggle-btn').css('background-color', 'transparent');
-
-   //      }
-   //  });
 
         /*
          * ----------------------------------------------------------------------------------------
@@ -192,8 +157,8 @@
         });
 
         $('.header-text').typed({
-                strings:[" <h2>Hello. <br> I'm Michael J. Stokes. <br> I'm your developer. <br> Let's build something together!</h2>"], 
-                typeSpeed:100,
+                strings:[" <h2>Hello. <br> I'm Michael J. Stokes. <br> I'm your developer. <br> Let's build something together!</h2> <div class='home-arrow-down'> <i class='fa fa-angle-double-down'> </i>  </div>  "], 
+                typeSpeed:50,
                 loop:false,
                 cursorChar: "|",
                 showCursor: true
@@ -228,7 +193,39 @@
         new WOW().init();
 
 
+        
 
+     /*
+         * ----------------------------------------------------------------------------------------
+         *  AUTO SCROLL
+         * ----------------------------------------------------------------------------------------
+         */
+  
+         $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+
+
+
+            $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 500) {
+                $('.navbar-color').css('background-color', '#1c1d1dc');
+            } else {
+               $('.navbar-color').css('background-color', 'transparent');
+            }
+        });
+            
 
 
 

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
    <link href="https://file.myfontastic.com/zS5BGnD45yUTsEKpdeGxeb/icons.css" rel="stylesheet">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/images/Logo.ico">
@@ -43,6 +44,7 @@
     </div>
     <!-- / END PRELOADER -->
 
+
     
      <!-- START HOMEPAGE DESIGN AREA -->
     <header id="home" class="welcome-area site-header">
@@ -50,47 +52,39 @@
             <div class="container">
                 <div class="row">
                   <div class="col-sm-3">
-                        <!-- START LOGO DESIGN AREA -->
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/images/Logo.png"> Michael J. Stokes</a>
-                        </div>
-                        <!-- END LOGO DESIGN AREA -->
+                        
                     </div>
                     <div class="col-sm-9">
                         <!-- START MENU DESIGN AREA -->
-                         <!-- <div class="mainmenu">
-                            <div class="navbar navbar-nobg">
-                                <div class="navbar-header"> 
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="nav-toggle hidden-xs">
-                                    <button class="toggle-btn wow fadeInRight">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a>
-                                        </li>
-                                        <li><a class="smoth-scroll" href="#about">About</a>
-                                        </li>
-                                        <li><a class="smoth-scroll" href="#project">project</a>
-                                        </li>
-                                        <li><a class="smoth-scroll" href="http://stokesblog.herokuapp.com">blog</a>
-                                        </li>
-                                        <li><a class="smoth-scroll" href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-color">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#example'>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                  <!-- START LOGO DESIGN AREA -->
+                        <div class="logo">
+                            <a href="#home" class="navbar-brand navbar-text-color"><img src="assets/images/Logo.png"><span>Michael J. Stokes</span></a>
+                        </div>
+                        <!-- END LOGO DESIGN AREA -->
+                </div>
+                <div class="collapse navbar-collapse" id='example'>
+                    <ul class="nav navbar-nav navbar-text-color navbar-right">
+                        <li class='hidden'><a href=""></a></li>
+                        <li id="li-home"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
                         
                         <!-- END MENU DESIGN AREA -->
                     </div>
@@ -117,6 +111,50 @@
         </div>
     </header>
     <!-- / END HOMEPAGE DESIGN AREA -->
+               
+
+ <!-- START SERVICES DESIGN AREA -->
+    <section class="service-area section-padding" data-stellar-background-ratio="0.6" id="services">
+        <div class="container">
+            <div class="row">
+             <div class="section-title">
+                        <h2>My Services</h2>
+                    </div>
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
+                        <i class="fa fa-code"></i>
+                        <h2>Front End Web Development</h2>
+                        <p> I use the latest front end technologies that will bring your site up to code and date. 
+
+
+</p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa fa-wordpress"></i>
+                        <h2>WordPress Theme Development</h2>
+                        <p>I develop and customize your WordPress site and bring your current theme into place.</p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.6s">
+                        <i class="fa fa-wrench"></i>
+                        <h2>Web Maintenance and Customization</h2>
+                        <p>I'll keep your site up to date and provide customization that caters your specific needs.  </p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+            </div>
+        </div>
+    </section>
+    <!-- / END SERVICES DESIGN AREA -->
+
 
     <!-- START ABOUT DESIGN AREA -->
     <section id="about" class="about-me-area section-padding">
@@ -126,13 +164,11 @@
                     <!-- START ABOUT TEXT AREA -->
                     <div class="about-text">
                          <div class="section-title">
-                        <h2 class="wow fadeInDown" data-wow-delay="0.4s">Just a simple bio</h2>
+                        <h2 class="wow fadeInDown" data-wow-delay="0.4s">About Michael J. Stokes</h2>
                     </div>
-                        <p class="wow fadeInUp" data-wow-delay="0.6s">I am a developer who is obsessed with building websites that are fun, clean, simple, and user-friendly. I got my 'hands on' coding experience from one of the most challenging 'dev bootcamps' in New York City at General Assembly. 
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">I am a developer who is devoted to creating professional online portfolio sites for your brand.  Based out of North Carolina, I began my career as a developer self taught, and graduated from one of the most intensive institutions of New York City. My goal is to provide you with a clean looking professional site based on your personality and talents that will make you stand out of the crowd.</p>
 
-                        General Assembly has given me the mentality of projecting as a professional developer in the real world. From that foundation I have studied Full-Stack development and built web applications using mostly PHP, Ruby, JavaScript, HTML, and CSS. When it comes to code, I'm very dedicated to solving challenges that will increase my potential of becoming a great developer. 
 
-                        I'm seeking the freedom to live the life of my dreams while helping others at the same time. Whenever I'm not coding, I love to watch YouTube, listen to R&B music, and Google things randomly.</p>
 
                         <br>
 
@@ -145,9 +181,79 @@
     </section>
     <!-- / END ABOUT DESIGN AREA -->
 
+     <!-- START SKILLS DESIGN AREA -->
+    <section id="skill" class="skills-area section-padding" data-stellar-background-ratio="0.6">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                    <h2>Why A Website By Michael?</h2>
+                    <br>    
+                    <br>    
+                        
+<p>Having your own site means better chances of you being quickly discovered and recognized in this digital era. This is how modeling agencies, record producers, and talent scouts make their discoveries. Social media is a great tool to promote you. There are millions of users and it’s easy to make yourself known to the world. Social media has their limitations. The same goes for web builders, yes they are the cheaper option, but when it comes to design, the options are limited.  With your own website created by me, the options are limitless. You get exactly what you want.  It’s not just a cost, it’s an investment of you! You need to be 100% in control of your online presence! I’m here to help you continue to build brand awareness.
+  </p>
+
+
+                    </div>
+                </div>
+            </div>  
+        <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service wow bounceIn">
+                            <div class="service-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Clean Look</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service wow bounceIn" data-wow-delay=".25s">
+                            <div class="service-icon">
+                                <i class="fa fa-tv"></i>
+                            </div>
+                            <h4>100% Responsive</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service wow bounceIn" data-wow-delay=".50s">
+                            <div class="service-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h4> Quick Turn Around Time</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service wow bounceIn" data-wow-delay=".75s">
+                            <div class="service-icon">
+                                <i class="fa fa-umbrella"></i>
+                            </div>
+                            <h4>Full Support</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
+
+
+
+
+          
+        </div>
+    </section>
+    <!-- / END SKILLS DESIGN AREA -->
+
+
+
+
+
+  
+
     
     <!-- START COMPLETE HISTORY DESIGN AREA -->
-    <section class="history-area section-padding" data-stellar-background-ratio="0.6">
+  <!--   <section class="history-area section-padding" data-stellar-background-ratio="0.6">
         <div class="container">
             <div class="row">
              <div class="col-md-3 col-sm-6">
@@ -181,12 +287,17 @@
                
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- / END COMPLETE HISTORY DESIGN AREA -->
 
 
+
+
+
+   
+
     <!-- START SKILLS DESIGN AREA -->
-    <section id="skill" class="skillset section-padding">
+    <section id="skills" class="skillset section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -249,10 +360,133 @@
     <!-- / END SKILLS DESIGN AREA -->
 
 
-   <!--...................................................JENNIFER EDIT PORTFOLIO HERE!!!..........................................-->
+
+ <!-- START WORK DESIGN AREA -->
+    <section id="work" class="work section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>My Work</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="work">
+                    <li class="filter" data-filter="all">all</li>
+                    <li class="filter" data-filter=".front-end">Front End Development</li>
+                    <li class="filter" data-filter=".full-stack">Full Stack Development</li>
+                    <li class="filter" data-filter=".wordpress">WordPress</li>
+                </ul>
+            </div>
+            <div class="work-inner">
+                <div class="row work-posts grid">
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix full-stack">
+                        <div class="item">
+                            <a href="http://namethattube.herokuapp.com/" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/name-that-tube.jpg" alt="image">
+                                    <figcaption>
+                                        <h2>Name That Tube</h2>
+                                          <p><strong>Ruby on Rails</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix full-stack">
+                        <div class="item">
+                            <a href="http://music-forum.herokuapp.com/" class="work-popup" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/music-forum.jpg" alt="Music-Forum">
+                                    <figcaption>
+                                        <h2>Music Forum</h2>
+                                        <p><strong>Node JavaScript</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix front-end">
+                        <div class="item">
+                            <a href="http://nlm-marketing.herokuapp.com/" class="work-popup" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/nlm.jpg" alt="NLM-Marketing">
+                                    <figcaption>
+                                        <h2>NLM Marketing</h2>
+                                        <p><strong>HTML CSS Ruby</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div> 
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix wordpress front-end">
+                        <div class="item">
+                            <a href="http://victoriasite.herokuapp.com/" class="work-popup" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/victoria.jpg" alt="The Victoria">
+                                    <figcaption>
+                                        <h2>The Victoria</h2>
+                                        <p><strong>WordPress</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix full-stack">
+                        <div class="item">
+                            <a href="http://stokesblog.herokuapp.com/" class="work-popup" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/stokes-blog.jpg" alt="Rails Blog">
+                                    <figcaption>
+                                        <h2>Rails Blog</h2>
+                                        <p><strong>Ruby on Rails</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                    <!-- START SINGLE WORK DESIGN AREA -->
+                    <div class="col-md-4 col-sm-6 mix wordpress">
+                        <div class="item">
+                            <a href="http://mjstokes.com/portfolioiii/" class="work-popup" target="_blank">
+                                <figure class="effect-bubba">
+                                    <img src="assets/images/projects/portfolioIII.jpg" alt="Portfolio-Site-III">
+                                    <figcaption>
+                                        <h2>Portfolio Site III</h2>
+                                        <p><strong>WordPress</strong></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- END SINGLE WORK DESIGN AREA -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- / END START WORK DESIGN AREA -->
+
+
+
+
+
+
+
 
     <!-- START PROJECT SECTION DESIGN AREA -->
-    <section id="project" class="project-area section-padding">
+    <!-- <section id="project" class="project-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -263,157 +497,157 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="project-list">
+                    <div class="project-list"> -->
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-one" class="single-project wow fadeInUp" data-wow-delay="0.2s">
+                      <!--   <div id="project-one" class="single-project wow fadeInUp" data-wow-delay="0.2s">
                             <img src="assets/images/projects/name-that-tube.jpg" alt="Name That Tube">
                            <p class="project-title"> Name That Tube</p>
                             <p>A Ruby on Rails trivia game application designed for users to test their knowledge of music, games, TV, and movies by identifying specific YouTube videos as their clue for answers.</p>
                             <hr>
                             <p class="project-title">Ruby on Rails PostgreSQL HTML5 CSS Bootstrap</p>
-
+ -->
                          <!-- ............................................   THE BUTTONS................................. -->
-                            <a href="http://namethattube.herokuapp.com" target="_blank" class="project-link">PROJECT LINK</a> <a href="https://github.com/MJStokes86/Name-That-Tube" class="project-link" target="_blank">< / ></a>
+                           <!--  <a href="http://namethattube.herokuapp.com" target="_blank" class="project-link">PROJECT LINK</a> <a href="https://github.com/MJStokes86/Name-That-Tube" class="project-link" target="_blank">< / ></a> -->
                            <!--  .............................................THE BUTTONS ...................................-->
                             
-                        </div>
+                       <!--  </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-two" class="single-project wow fadeInUp" data-wow-delay="0.4s">
+                       <!--  <div id="project-two" class="single-project wow fadeInUp" data-wow-delay="0.4s">
                             <img src="assets/images/projects/music-forum.jpg" alt="Music Forum">
                            <p class="project-title">Music Forum</p>
                             <p>A simple Node/Express application where users can post music related topics and comments according to their personal interests.</p>
                             <hr>
-                            <p class="project-title">HTML CSS3 Node Express Mustache.js SQLite3</p>
+                            <p class="project-title">HTML CSS3 Node Express Mustache.js SQLite3</p> -->
 
                         <!--  .............................................THE BUTTONS ...................................-->
 
-                            <a href="http://music-forum.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
-                            <a href="https://github.com/MJStokes86/Music-Forum" class="project-link" target="_blank">< / ></a>
+                        <!--     <a href="http://music-forum.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
+                            <a href="https://github.com/MJStokes86/Music-Forum" class="project-link" target="_blank">< / ></a> -->
                         <!--  .............................................THE BUTTONS ...................................-->
 
                            
-                        </div>
+                       <!--  </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-three" class="single-project wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- <div id="project-three" class="single-project wow fadeInUp" data-wow-delay="0.6s">
                             <img src="assets/images/projects/nlm.jpg" alt="NLM Marketing">
                            <p class="project-title">NLM Marketing</p>
                             <p>My first freelance project for a marketing company based in the Northeast that specializes in grocery goods.</p>
                             <hr>
-                            <p class="project-title">HTML5  CSS3  jQuery Ruby Sinatra Bootstrap</p>
+                            <p class="project-title">HTML5  CSS3  jQuery Ruby Sinatra Bootstrap</p> -->
 
                             <!--  .............................................THE BUTTONS ...................................-->
 
                              
-                            <a href="http://nlm-marketing.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
-                            <a href="https://github.com/MJStokes86/NLM-Marketing" class="project-link" class="project-link" target="_blank">< / ></a>
+                        <!--     <a href="http://nlm-marketing.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
+                            <a href="https://github.com/MJStokes86/NLM-Marketing" class="project-link" class="project-link" target="_blank">< / ></a> -->
 
                              <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                      <!--   </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-four" class="single-project wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- <div id="project-four" class="single-project wow fadeInUp" data-wow-delay="0.6s">
                             <img src="assets/images/projects/victoria.jpg" alt="">
                             <p class="project-title">The Victoria</p>
                             <p>A bootstrap one-page portfolio theme site suitable for the female model.</p>
                             <hr>
-                            <p class="project-title">HTML5 CSS3 JavaScript Bootstrap PhotoShop</p>
+                            <p class="project-title">HTML5 CSS3 JavaScript Bootstrap PhotoShop</p> -->
 
                          <!--  .............................................THE BUTTONS ...................................-->
-
+<!-- 
                             <a href="http://victoriasite.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
-                            <a href="https://github.com/MJStokes86/Victoria-Theme-II" class="project-link" target="_blank">< / ></a>
+                            <a href="https://github.com/MJStokes86/Victoria-Theme-II" class="project-link" target="_blank">< / ></a> -->
 
                         <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                       <!--  </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-five" class="single-project wow fadeInUp" data-wow-delay="0.2s">
+                      <!--   <div id="project-five" class="single-project wow fadeInUp" data-wow-delay="0.2s">
                             <img src="assets/images/projects/stokes-blog.jpg" alt="">
                             <p class="project-title">Rails Blog</p>
                             <p>A simple ruby on rails blogging application that allows users to post content of their desires.</p>
                             <hr>
-                            <p class="project-title">Ruby on Rails PostgreSQL HTML5 CSS Devise</p>
+                            <p class="project-title">Ruby on Rails PostgreSQL HTML5 CSS Devise</p> -->
 
                         <!--  .............................................THE BUTTONS ...................................-->
 
-                            <a href="http://stokesblog.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
+                         <!--    <a href="http://stokesblog.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
                             <a href="https://github.com/MJStokes86/Rails-Blog" class="project-link" target="_blank">< / ></a>
-
+ -->
                         <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                    <!--     </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
                          <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-six" class="single-project wow fadeInUp" data-wow-delay="0.2s">
+                    <!--     <div id="project-six" class="single-project wow fadeInUp" data-wow-delay="0.2s">
                             <img src="assets/images/projects/portfolioI.jpg" alt="">
                             <p class="project-title">Portfolio Site I
                             <p>The first portfolio version I built with Ruby Sinatra.</p>
                             <hr>
-                            <p class="project-title">Sinatra HTML5 CSS Bootstrap Pure Bootstrap</p>
+                            <p class="project-title">Sinatra HTML5 CSS Bootstrap Pure Bootstrap</p> -->
 
                             <!--  .............................................THE BUTTONS ...................................-->
 
-                            <a href="http://mjstokes86.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
-                            <a href="https://github.com/MJStokes86/Portfolio-Site" class="project-link" target="_blank">< / ></a>
+                         <!--    <a href="http://mjstokes86.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
+                            <a href="https://github.com/MJStokes86/Portfolio-Site" class="project-link" target="_blank">< / ></a> -->
 
                              <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                       <!--  </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-seven" class="single-project wow fadeInUp" data-wow-delay="0.2s">
+                       <!--  <div id="project-seven" class="single-project wow fadeInUp" data-wow-delay="0.2s">
                             <img src="assets/images/projects/portfolioII.bmp" alt="">
                            <p class="project-title">Portfolio Site II</p>
                             <p>The second portfolio site I built with Ruby Sinatra. One page theme. Complete with owl-carousel slider. </p>
                             <hr>
-                            <p class="project-title">Sinatra JavaScript  HTML5 CSS3 Bootstrap  jQuery</p>
+                            <p class="project-title">Sinatra JavaScript  HTML5 CSS3 Bootstrap  jQuery</p> -->
 
                              <!--  .............................................THE BUTTONS ...................................-->
-
+<!-- 
                             <a href="http://mjstokes.herokuapp.com/" class="project-link" target="_blank">PROJECT LINK</a>
-                            <a href="https://github.com/MJStokes86/Portfolio-Site-II" class="project-link" target="_blank">< / ></a>
+                            <a href="https://github.com/MJStokes86/Portfolio-Site-II" class="project-link" target="_blank">< / ></a> -->
 
                             <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                     <!--    </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
                         <!-- START SINGLE PROJECT DESIGN AREA -->
-                        <div id="project-eight" class="single-project wow fadeInUp" data-wow-delay="0.2s">
+                    <!--     <div id="project-eight" class="single-project wow fadeInUp" data-wow-delay="0.2s">
                             <img src="assets/images/projects/portfolioIII.jpg" alt="">
                            <p class="project-title">Portfolio Site III</p>
                             <p>A full-stack portfolio site built with WordPress.</p>
                             <hr>
-                            <p class="project-title">WordPress PHP MySQL HTML5 CSS3 JavaScript</p>
+                            <p class="project-title">WordPress PHP MySQL HTML5 CSS3 JavaScript</p> -->
 
                             <!--  .............................................THE BUTTONS ...................................-->
 
 <!--                             <a href="#" class="project-link" target="_blank">PROJECT LINK</a>
- -->                            <a href="https://github.com/MJStokes86/Portfolio-Site-III" class="project-link" target="_blank">< / ></a>
+ -->                          <!--   <a href="https://github.com/MJStokes86/Portfolio-Site-III" class="project-link" target="_blank">< / ></a> -->
                             <!--  .............................................THE BUTTONS ...................................-->
 
-                        </div>
+                     <!--    </div> -->
                         <!-- / END SINGLE PROJECT DESIGN AREA -->
 
 
-                    </div>
+      <!--               </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- / END PROJECT PAGE DESIGN AREA -->
 
    <!--...................................................JENNIFER EDIT PORTFOLIO HERE!!!..........................................-->
@@ -421,26 +655,29 @@
 
 
     <!-- START AVAILABLE DESIGN AREA -->
-    <section class="available-work-area" data-stellar-background-ratio="0.2">
+   <!--  <section class="available-work-area" data-stellar-background-ratio="0.2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                     <div class="available-text text-left">
-                        <h3 class="wow fadeInDown">My dream career opportunity <br>is me working for a well funded startup <br> or a big company, coding full-time, <br>
-                        and having fun with my co-workers and supervisors. <br>
-                        I want to be part of your team! <br>
-                        I want to grow! I want to work! <br> Please hire me!</h3>
+                     <div class="available-text text-center">
+
+                     <p> I’m available for freelancing and taking on a role with your company. <br> 
+                     I'm always ready to take on new projects.</p>
+
+
+           <a href="<?php bloginfo('template_directory'); ?>/Michael_Stokes_Dev_Resume.pdf" class="wow fadeInUp" id="resume-button" target="_blank">Download Resume</a>
+                      
                         </div>
 
-                        <a href="<?php bloginfo('template_directory'); ?>/Michael_Stokes_Dev_Resume.pdf" class="wow fadeInUp" id="resume-button" target="_blank">Download Resume</a>
+                     
 
-                    <!--   <div class="home-arrow-down">
+                      <div class="home-arrow-down">
                     <a href="#about" class="smoth-scroll btn"><i class="fa fa-angle-double-down"></i></a>
-                    </div> -->
+                    </div>
                 
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- / END AVAILABLE DESIGN AREA -->
 
 
@@ -451,9 +688,17 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h2>Contact Me</h2>
+                        <br>    
+                        <br>    
+                        <br>    
+                          <h3>If you are serious and ready to promote yourself or your company, please contact me at
+  <!-- <i class="fa fa-mobile fa-3x"></i> -->
+                        <br>
+                        <p>(336) 693-5580</p>
+or send an inquiry via form.</h3>
                         <br>
                         <br>
-                        <div class="col-md-6">
+                      <!--   <div class="col-md-6">
                         <i class="fa fa-mobile fa-3x"></i>
                         <br>
                         <p>(336) 693-5580</p> 
@@ -464,7 +709,7 @@
                          <br>
                          <p>michael@mjstokes.com</p>
                         </div> 
-                        <hr>                            
+                        <hr>                             -->
                     </div>
                 </div>
             </div>
@@ -499,9 +744,16 @@
                         </form>
                     </div>
                     <!-- / END CONTACT FORM DESIGN AREA -->
+
                 </div>
+
             </div>
+
         </div>
+        <br> 
+        <br>    
+        <br>       
+         <h3 class='text-center'>Looking forward to be hearing from you soon.</h3>
     </section>
     <!-- / END CONTACT DESIGN AREA -->
 
@@ -541,12 +793,15 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!-- COUNTERUP JS -->
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- WAYPOINTS JS-->
+    <script src="assets/js/jquery.waypoints.min.js"></script> 
+    <!-- COLOR JS-->
+    <script src="assets/js/jquery.color.min.js"></script>
     <!-- WOW JS -->
     <script src="assets/js/wow.min.js"></script>
     <!-- CONTACT FORM JS -->
     <script src="assets/js/form-contact.js"></script> 
-    <!-- CONTACT FORM JS -->
+    <!-- TYPED JS -->
     <script src="assets/js/typed.js"></script> 
     <!-- SCRIPT JS -->
     <script src="assets/js/scripts.js"></script>

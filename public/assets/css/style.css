@@ -175,9 +175,10 @@ fieldset {
 
 
 
+
 .welcome-image-area:after {
     position: absolute;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     left: 0;
     top: 0;
     width: 100%;
@@ -236,7 +237,13 @@ fieldset {
     font-size: 10px;
 }
 
-.header-text .home-arrow-down {
+.home-arrow-down {
+    position: absolute;
+    top: 105%;
+    font-size:  50px;
+}
+
+ .home-arrow-down {
     text-align: center;
     position: absolute;
     bottom: -210px;
@@ -244,12 +251,11 @@ fieldset {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-.header-text .home-arrow-down .btn {
+ .home-arrow-down .btn {
     font-size: 30px;
 }
 
-.header-text .home-arrow-down .fa {
+ .home-arrow-down .fa {
     color: #fafafa;
     display: inline-block;
     -webkit-transform-style: preserve-3d;
@@ -263,6 +269,7 @@ fieldset {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
+
 
 @-webkit-keyframes home-arrow-down {
     from {
@@ -323,6 +330,42 @@ fieldset {
 }
 
 
+#brand {
+    
+    margin-top: -5%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+#name {
+    position: relative;
+    top: 70%;
+    color: pink;
+    font-family: Anton, sans-serif;
+}
+
+#subtitle {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 20px;
+    /* border-top: solid #fff 3px;
+    border-bottom: solid #fff 3px; */
+    padding:25px 100px;
+    display:inline-block;
+    /* background-color: #fff; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    left: 0%;
+    top: 10px;
+
+
+}
+
+
+
 .logo {
     padding-top: 28px;
     -webkit-transition: all 0.3s ease-out;
@@ -342,118 +385,67 @@ fieldset {
     font-size: 1.5em;
 }
 
-.nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 9%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.toggle-btn {
-    background-color: #000;
-    border: 1px #fff solid;
-    padding: 10px;
-    outline: none;
-}
-
-.toggle-btn .icon-bar {
-    background-color: #fafafa;
-    display: block;
-    height: 2px;
-    margin-bottom: 5px;
-    width: 22px;
+.logo span {
     position: relative;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    left: 50%;
+    top: -50px;
 }
 
-.toggle-btn.active .icon-bar:nth-child(2) {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
+.navbar-nav {
+    position: relative;
+    left: 60% !important;
+    top: -25px;
 }
 
-.toggle-btn.active .icon-bar:nth-child(1) {
-    top: 9px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+.navbar-nav li a {
+    color: #fff !important;
 }
 
-.toggle-btn.active .icon-bar:nth-child(3) {
-    top: -5px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.toggle-btn .icon-bar:last-child {
-    margin-bottom: 0;
-}
-
-.nav-toggle + .navbar-collapse {
-    margin-right: 43px;
-}
-
-
-.site-header .navbar-collapse {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.site-header.active .navbar-collapse {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-}
-
-.mainmenu {
-    margin-top: 10%;
-    margin-left: 61%;
-    position: fixed;
-
-}
-
-.mainmenu .navbar-nav li a {
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 8px 15px;
-    -webkit-transition: .3s;
-    transition: .3s;
-    font-weight: 300;
-   
-
-}
-
-ul.navbar-nav {
-    background: #000;
-    margin-right: 5px;
-    margin-top: 15px;
-}
-
-.mainmenu .navbar-nav li a:hover {
-    background: none;
-    color: #ccc;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.nav li a:focus,
-.nav li a:hover {
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
     background: none;
     color: #fff;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+#li-home a {
+    color: #fff !important;
+}
+
+#li-home.active a {
+    background-color: transparent !important;
+}
+
+
+
+li.active a {
+     color: #000 !important;
 }
 
 .navbar {
     margin: 0;
+    border-bottom: none !important;
+
 }
 
+.navbar-brand {
+    position: relative;
+
+}
+
+.navbar .nav {
+    width: 100%;
+    height: 60px;
+}
+
+.navbar-color {
+    background-color: transparent;
+}
+
+.navbar-text-color {
+    color: #fff !important;
+}
 
 
 
@@ -488,7 +480,7 @@ ul.navbar-nav {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 05.SERVICE CSS STYLE
+* 05.History CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
@@ -538,11 +530,163 @@ ul.navbar-nav {
 }
 
 
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-icon {
+   position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    line-height: 96px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 34px;
+    display: block;
+    color: #fff;
+}
+
+/* .service-icon i {
+    position: relative;
+    left: 30%;
+}
+
+.service-icon h4 {
+    position: relative;
+    left: 50%;
+} */
+
+
+.service {
+    text-align: center;
+    color: #fff;
+}
+
+
+.service-area {
+   /* position: relative;
+    background: url(../images/bg/bethesdactrlpk.jpg);
+    background-size: cover;
+    z-index: 1;
+    padding: 150px 0px;
+    background-attachment: fixed; */
+
+    background-color: #000;
+}
+
+.service-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.service-area .section-title {
+    color: #fff;
+}
+
+
+
+.single-service {}
+
+.single-service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.single-service p {
+    color: #fff;
+}
+
+
+
+
 /*
 * ----------------------------------------------------------------------------------------
 * 06.SKILL CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
+
+.skills-area {
+      position: relative;
+    background: url(../images/bg/bethesdactrlpk.jpg);
+    background-size: cover;
+    z-index: 1;
+    padding: 150px 0px;
+    background-attachment: fixed;
+}
+
+.skills-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.skills-area h2 {
+    color: #fff;
+}
+
+.skills-area p {
+    color: #fff;
+}
+
+.single-progress-bar {
+    margin-bottom: 30px;
+} 
+
+p.progress-bar-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.progress-bar-text span {
+    float: right;
+}
+
+.progress-bar {
+    background: #fff;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 12px;
+    background: #212121;
+    box-shadow: none !important;
+    border: 0;
+    margin-top: 8px;
+}
 
 .skillset {
     background-color: #212121;
@@ -556,7 +700,13 @@ ul.navbar-nav {
 
 
 .tech-skills li {
-    display: inline;
+    display: inline-block !important;
+    padding: 10px;
+}
+
+.tech-skills li p {
+    position: relative;
+    top: 50px;
 }
 
 .devicons {
@@ -778,6 +928,8 @@ a#resume-button {
     text-transform: capitalize;
     font-size: 14px;
     border-radius: 0;
+    position: relative;
+    
 }
 
 a.project-link:hover, a#resume-button:hover {
@@ -797,19 +949,19 @@ a#resume-button:hover {
 }
 
 #project-two hr {
-    margin-top: 15%;
+    margin-top: 14.5%;
 }
 #project-three hr {
     margin-top: 23%;
 }
 #project-four hr {
-    margin-top: 31%;
+    margin-top: 32.3%;
 }
 #project-five hr {
     margin-top: 23%;
 }
 #project-six hr {
-    margin-top: 31%;
+    margin-top: 32.2%;
 }
 
 #project-seven hr {
@@ -849,6 +1001,11 @@ a#resume-button:hover {
 */
 
 .available-work-area {
+    background-color:  #212121;
+    height: 300px;
+}
+
+/* .available-work-area {
     position: relative;
     background: url(../images/bg/GrandCentral.jpg);
     background-size: cover;
@@ -866,14 +1023,14 @@ a#resume-button:hover {
     height: 100%;
     content: "";
     z-index: -1;
-}
+} */
 
-.available-text h3 {
+.available-text p {
     color: #fafafa;
     font-size: 30px;
-    font-weight: 900;
-    text-transform: capitalize;
-    color: pink;
+    /* font-weight: 900; */
+/*     text-transform: capitalize;
+ */    
     margin-top: 10%;
 }
 
@@ -918,6 +1075,27 @@ a#resume-button:hover {
 .contact-me-area {
     background-color: #212121;
     color: #fafafa;
+}
+
+
+.contact-me-area {
+    position: relative;
+    background: url(../images/bg/GrandCentral.jpg);
+    background-size: cover;
+    z-index: 1;
+    padding: 150px 0px;
+    background-attachment: fixed;
+}
+
+.contact-me-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
 }
 
 .contact-form {
@@ -1042,5 +1220,5 @@ a#resume-button:hover {
     height: 100px;
     width: 100px;
     position: relative;
-    left: 46%;
+    left: 45.5%;
 }
